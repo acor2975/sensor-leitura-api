@@ -1,7 +1,8 @@
 var Leitura = require('../models/leitura')
 
-function criar (leitura) {
-    var model = new Leitura(leitura)
+function criar (umidade) {
+    console.log(umidade)
+    var model = new Leitura(leitura = {dataColeta: Date.now(), umidadeSolo: new Number(umidade.umidadeSolo)})
     return model.save()
 }
 
@@ -12,4 +13,5 @@ function encontrarRecente () {
 module.exports = {
     criar: criar,
     encontrarRecente: encontrarRecente
+
 }

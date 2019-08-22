@@ -13,4 +13,5 @@ router.post('/', async function (req, res) {
     res.send(leitura)
 })
 
+
 module.exports = router

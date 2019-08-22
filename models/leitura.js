@@ -3,7 +3,6 @@ var Schema = mongoose.Schema
 
 var Leitura = new Schema({
     dataColeta: Date,
-    indicePluviometrico: Number,
     umidadeSolo: Number,
 })
 
